@@ -1,0 +1,393 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.home{
+    
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+}
+.home .one{width: 100%;
+    height: 90vh;
+background-color:rgba(0, 2, 20, .1);
+padding: 60px 40px;}
+.home .one .one_one{
+    line-height: 50px;
+}
+.home .one .one_one p{
+ color: #888;
+ font-size: 17px;
+ font-weight: bold;   
+}
+.home .one .one_one h1{
+    font-weight: bolder;
+    font-size: 23px;
+    font-family:cursive;
+}
+.home .one .one_one span{
+    font-size: 23px;
+    font-weight: bolder;
+}
+.one_two{padding: 7px;}
+.one_two p{
+    padding: 1.5px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #888;
+}
+.one strong{
+    font-weight: bolder;
+    font-size: 23px;
+    text-decoration: underline;
+    text-transform: lowercase;
+    color: black;
+    padding: 5px;
+}
+.one_three{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.one_three .chbox{
+    width: 100%;
+    border-radius: 1.5px;
+    display: flex;
+    text-align: center;
+}
+.one_three .chbox label{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(218, 213, 213);
+    color: white;
+}
+.chbox .ppp:checked + .z{
+    background-color: rgba(0, 2, 20, .9);
+}
+.chbox .ppp{display: none;}
+.finish{
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.finish button{
+    padding: 10px 60px;
+    border-radius: 5px;
+    color: white;
+    background-color:rgba(1, 2, 20, 0.3);
+    border: none 0px transparent;
+    box-shadow: 0px 10px 30px 10px;
+    transition: all ease 1.3s;
+    cursor: pointer;
+}
+.finish button:hover{
+    background-color: blue;
+    color: black;
+    padding: 7px 30px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.home .link{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+.home .link a{
+    color: #888;
+padding: 15px;
+font-weight: 900;
+font-size: 19px;
+}
+.home .two{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+.home .two_one{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 9%;
+    background-color: white;
+    color: #888;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    border: dotted #888 .3px;
+    text-align: center;
+}
+.home .two_one i{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    font-size: 19px;
+    padding:15px;
+    transition: all ease .9s;
+}
+.home .two_one i:hover{
+    background-color: blue;
+}
+.home .image{
+    width: 100%;
+
+}
+.home .image img{
+    width: 100%;
+    height: 90vh;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.btns .btn1,.btns .btn2{
+    padding: 10px 35px;
+}
+.btns .btn1 , .btns .btn2{
+    position: relative;
+    bottom: 30vh;
+    cursor: pointer;
+}
+.btns .btn2{
+    transform: translateX(-30px);
+    border: none transparent 0px;
+    transition: all ease .9s;
+}
+.btns .btn1{
+    transform: translateX(30px);
+    border: none transparent 0px;
+    transition: all ease .9s;
+}
+.btns .btn1:hover{
+    background-color: rgb(63, 63, 154);
+    color: azure;
+    font-size: 23px;
+}
+.btns .btn2:hover{
+    background-color: rgb(63, 63, 154);
+    color: azure;
+    font-size: 23px;
+}
+@media (min-width:200px) {
+    .home{
+        width: 60%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+    .home .one .one_two p{
+        position: relative;
+        bottom: 35px;
+    }
+    .home .one .one_one,.home .one .one_two{
+        position: relative;
+       bottom: 13%;
+    }
+    .home .one .one_one p{
+        position: relative;
+        bottom: 15px;
+    }
+    .home .one .one_one h1{
+        position: relative;
+        bottom: 21px;
+    }
+    .home .one .one_one span{
+        position: relative;
+        bottom: 25px;
+    }
+    .home .one strong{
+        position: relative;
+        bottom: 100px;
+    }
+    .home .one .one_three{
+        position: relative;
+        bottom: 105px;
+    }
+    .home .one .finish {
+        position: relative;
+        bottom: 120px;
+        box-sizing: border-box;
+    }  
+      .home .two .two_one{
+        border:  none transparent 0px;
+       }
+       .home .two .two_one i{
+        position: relative;
+        right: 7px;
+       }
+}
+@media (min-width:400px) {
+    .home{
+        width: 60%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+    .home .one .one_two p{
+        position: relative;
+        bottom: 35px;
+    }
+    .home .one .one_one,.home .one .one_two{
+        position: relative;
+       bottom: 13%;
+    }
+    .home .one .one_one p{
+        position: relative;
+        bottom: 15px;
+    }
+    .home .one .one_one h1{
+        position: relative;
+        bottom: 21px;
+    }
+    .home .one .one_one span{
+        position: relative;
+        bottom: 25px;
+    }
+    .home .one strong{
+        position: relative;
+        bottom: 100px;
+    }
+    .home .one .one_three{
+        position: relative;
+        bottom: 105px;
+    }
+    .home .one .finish {
+        position: relative;
+        bottom: 120px;
+        box-sizing: border-box;
+    }  
+      .home .two .two_one{
+        border:  none transparent 0px;
+       }
+       .home .two .two_one i{
+        position: relative;
+        right: 7px;
+       }
+}
+@media (min-width:600px) {
+    .home{
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .home .one .one_one,.home .one .one_two{
+        position: relative;
+       bottom: 13%;
+    }
+    .home .one strong{
+        position: relative;
+        bottom: 25%;
+    }
+    .home .one .one_three{
+        position: relative;
+        bottom: 11%;
+    }
+    .home .one .finish{
+        position: relative;
+        bottom: 10%;
+    }
+    .home .one .one_one p{
+        position: relative;
+        bottom: 15px;
+    }
+    .home .one .one_one h1{
+        position: relative;
+        bottom: 30px;
+    }
+    .home .one .one_one span{
+        position: relative;
+        bottom: 40px;
+    }
+    .home .one_three .chbox{
+        position: relative;
+        bottom: 60px;
+    }
+    .home .finish button{
+        position: relative;
+        bottom: 70px;
+    }
+    .home .one_two p{
+        position: relative;
+        top: -50px;
+    }
+    .home .two .two_one{
+     border:  none transparent 0px;
+    }
+   
+}
+@media(min-width:1000px){
+    .home{
+width: 90%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 30px auto;
+    }
+    .home .finish .btn1,.home .finish .btn1{
+        padding: 15px 40px;
+    }
+}
+@media(min-width:1200px){
+    .home{
+width: 90%;
+height: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 30px auto;
+    }
+    .home .one .one_one p{
+        position: relative;
+        top: 40px;
+    }
+    .home .one .one_one h1{
+        position: relative;
+        top: 40px;
+    }
+    .home .one .one_one span{
+        position: relative;
+        top: 40px;
+    }
+    .home .one .one_two p{
+        position: relative;
+        top: 50px;
+    }
+    .home .one strong{
+        position: relative;
+       top: -10px;
+    }
+    .home .one .one_three{
+        position: relative;
+        top: 60px;
+    }
+    .home .one .finish button{
+        position: relative;
+        top: 65px;
+    }
+    .home .two .two_one i{
+        position: relative;
+        left: 5px;
+    }
+}
